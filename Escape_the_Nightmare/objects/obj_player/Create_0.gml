@@ -1,4 +1,4 @@
-hp = 100
+hp = 4
 can_shoot = true
 
 

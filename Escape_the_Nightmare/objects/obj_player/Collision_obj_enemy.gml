@@ -1,2 +1,2 @@
-hp-=25
+hp -= 0.5
 instance_destroy(other)

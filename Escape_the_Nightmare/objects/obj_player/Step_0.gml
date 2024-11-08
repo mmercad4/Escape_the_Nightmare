@@ -1,7 +1,7 @@
 vspeed = clamp(vspeed,-8,8)
 hspeed = clamp(hspeed,-8,8)
 
-if keyboard_check(ord("A")) hspeed -= move_speed
+if keyboard_check(ord("A")) hspeed -= move_speed 
 if keyboard_check(ord("D")) hspeed += move_speed
 if keyboard_check(ord("W")) vspeed -= move_speed
 if keyboard_check(ord("S")) vspeed += move_speed

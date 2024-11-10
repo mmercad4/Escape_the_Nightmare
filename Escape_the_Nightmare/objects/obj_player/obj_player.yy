@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_character",
-    "path":"sprites/spr_character/spr_character.yy",
+    "name":"spr_character_1",
+    "path":"sprites/spr_character_1/spr_character_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

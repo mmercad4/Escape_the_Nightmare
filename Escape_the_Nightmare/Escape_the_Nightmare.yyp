@@ -43,6 +43,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
+    {"id":{"name":"spr_character_1","path":"sprites/spr_character_1/spr_character_1.yy",},},
     {"id":{"name":"spr_character_down","path":"sprites/spr_character_down/spr_character_down.yy",},},
     {"id":{"name":"spr_character_scream_down","path":"sprites/spr_character_scream_down/spr_character_scream_down.yy",},},
     {"id":{"name":"spr_character_scream_side","path":"sprites/spr_character_scream_side/spr_character_scream_side.yy",},},

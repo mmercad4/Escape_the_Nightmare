@@ -62,9 +62,11 @@ if can_shoot = true and keyboard_check(vk_up){
 					{
 						//Pass in creation variables to bullets
 						vspeed : 15,
-						direction : 90,
-						image_angle : 90,
-						hspeed : obj_player.hspeed/3.5
+						direction : 90 + bullet_angle,
+						image_angle : 90 + bullet_angle,
+						speed : bullet_speed,
+						image_xscale: bullet_scale,
+						image_yscale: bullet_scale
 					})
 }
 if can_shoot = true and keyboard_check(vk_down){
@@ -76,9 +78,11 @@ if can_shoot = true and keyboard_check(vk_down){
 					{
 						//Pass in creation variables to bullets
 						vspeed : 15,
-						direction : 270,
-						image_angle : 270,
-						hspeed : obj_player.hspeed/3.5
+						direction : 270 + bullet_angle,
+						image_angle : 270 + bullet_angle,
+						speed : bullet_speed,
+						image_xscale: bullet_scale,
+						image_yscale: bullet_scale
 					})
 }
 if can_shoot = true and keyboard_check(vk_right){
@@ -91,9 +95,11 @@ if can_shoot = true and keyboard_check(vk_right){
 					{
 						//Pass in creation variables to bullets
 						hspeed : 15,
-						//direction : 0,
-						image_angle : 0,
-						vspeed : obj_player.vspeed/3.5
+						direction : 0 + bullet_angle,
+						image_angle : 0 + bullet_angle,
+						speed : bullet_speed,
+						image_xscale: bullet_scale,
+						image_yscale: bullet_scale
 					})
 }
 if can_shoot = true and keyboard_check(vk_left){
@@ -106,9 +112,11 @@ if can_shoot = true and keyboard_check(vk_left){
 					{
 						//Pass in creation variables to bullets
 						hspeed : -15,
-						//direction : 180,
-						image_angle : 180,
-						vspeed : obj_player.vspeed/3.5
+						direction : 180 + bullet_angle,
+						image_angle : 180 + bullet_angle,
+						speed : bullet_speed,
+						image_xscale: bullet_scale,
+						image_yscale: bullet_scale
 					})
 }
 

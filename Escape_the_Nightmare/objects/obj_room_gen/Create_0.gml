@@ -1,3 +1,5 @@
+win = false
+
 randomize() //Randomize seed
 
 //List of rooms within the floorplan. -1 indicates no room.
@@ -122,12 +124,32 @@ while (rooms_placed < num_rooms and not ds_queue_empty(queue)) {
 show_debug_message(rooms)
 show_debug_message(num_rooms)
 
+items = array_create(array_length(rooms), -1) // -1 indicates no item
+
 //Add in different room patterns (cell IDs other than 0)
 for (var i = 0; i < array_length(rooms); i+=1) {
 	if (rooms[i] != -1 and i != 35) { //Check if a room has been placed, skipping the starting room
 		rooms[i] = irandom_range(1,4) //Give each room a random ID that will determine its room layout.
 		//TODO: add more room patterns, and ensure identical patterns cannot be placed near eachother.
+		
+		// add random items and enemies
+
 	}
+}
+
+for (var i = 0; i < array_length(rooms); i += 1) {
+    if (rooms[i] != -1 && items[i] != -1) {
+        var room_x = (i mod 10) * room_width; // Calculate the x-coordinate based on index
+        var room_y = floor(i / 10) * room_height; // Calculate the y-coordinate based on index
+
+        // Create an item instance in the room based on the item ID
+        switch (items[i]) {
+            case 1: instance_create_layer(room_x + room_width / 2, room_y + room_height / 2, "Instances", obj_large_bullets); break;
+            case 2: instance_create_layer(room_x + room_width / 2, room_y + room_height / 2, "Instances", obj_small_bullets); break;
+            case 3: instance_create_layer(room_x + room_width / 2, room_y + room_height / 2, "Instances", obj_confusing_bullets); break;
+            // Add more cases if needed for additional item types
+        }
+    }
 }
 
 //ROOMS HAVE BEEN GENERATED

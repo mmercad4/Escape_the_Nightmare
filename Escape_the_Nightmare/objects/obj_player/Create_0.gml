@@ -15,3 +15,5 @@ min_speed = -8
 max_speed = 8
 
 item_array = []
+
+points = 0;

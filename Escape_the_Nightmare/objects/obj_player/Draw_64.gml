@@ -16,3 +16,12 @@ if (points >= 50) {
     // Draw "You Won!" at the center of the screen
     draw_text(room_width / 2, room_height / 2, "You Won!");
 }
+
+if (collision_message != "") {
+    draw_set_color(c_white); // Set text color to white
+    draw_set_halign(fa_center); // Center align text
+    draw_set_valign(fa_middle); // Middle align text
+
+    // Display the collision message at the center of the room
+    draw_text(room_width / 2, room_height / 6, collision_message);
+}

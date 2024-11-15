@@ -17,3 +17,5 @@ max_speed = 8
 item_array = []
 
 points = 0;
+
+collision_message = ""

@@ -37,6 +37,7 @@
   },
   "name":"Escape_the_Nightmare",
   "resources":[
+    {"id":{"name":"fnt_modifiers","path":"fonts/fnt_modifiers/fnt_modifiers.yy",},},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_confusing_bullets","path":"objects/obj_confusing_bullets/obj_confusing_bullets.yy",},},

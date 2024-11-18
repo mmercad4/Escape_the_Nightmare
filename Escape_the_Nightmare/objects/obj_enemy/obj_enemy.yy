@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy",
-    "path":"sprites/spr_enemy/spr_enemy.yy",
+    "name":"spr_orc1_idle_down",
+    "path":"sprites/spr_orc1_idle_down/spr_orc1_idle_down.yy",
   },
   "spriteMaskId":null,
   "visible":true,

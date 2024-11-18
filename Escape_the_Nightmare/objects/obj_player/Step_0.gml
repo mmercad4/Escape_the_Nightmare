@@ -1,5 +1,5 @@
-vspeed = clamp(vspeed,-8,8)
-hspeed = clamp(hspeed,-8,8)
+vspeed = clamp(vspeed,-max_speed,max_speed)
+hspeed = clamp(hspeed,-max_speed,max_speed)
 move_horizontal = 0;
 move_vertical = 0;
 
@@ -34,8 +34,9 @@ if (keyboard_check(ord("W"))) {
 
 // Normalize speed for diagonal movement
 if (move_horizontal != 0 && move_vertical != 0) {
-	vspeed = clamp(vspeed,-5.65,5.65)
-	hspeed = clamp(hspeed,-5.65,5.65)
+	var max_diagonal_speed = sqrt(sqr(max_speed)/2)
+	vspeed = clamp(vspeed,-max_diagonal_speed, max_diagonal_speed)
+	hspeed = clamp(hspeed,-max_diagonal_speed,max_diagonal_speed)
     hspeed += move_horizontal * move_speed
     vspeed += move_vertical * move_speed
 } else {

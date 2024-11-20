@@ -176,6 +176,7 @@
     {"id":{"name":"spr_orc3_walk_right","path":"sprites/spr_orc3_walk_right/spr_orc3_walk_right.yy",},},
     {"id":{"name":"spr_orc3_walk_up","path":"sprites/spr_orc3_walk_up/spr_orc3_walk_up.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
+    {"id":{"name":"spr_scream_2","path":"sprites/spr_scream_2/spr_scream_2.yy",},},
     {"id":{"name":"spr_scream","path":"sprites/spr_scream/spr_scream.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
   ],

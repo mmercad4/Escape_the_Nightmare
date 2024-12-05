@@ -1,4 +1,4 @@
-hp = 4
+hp = 10
 can_shoot = true
 move_horizontal = 0
 move_vertical = 0
@@ -25,3 +25,10 @@ is_hit = false
 hit_timer = 0
 hit_release = room_speed * 0.5
 sh_handle_timer_hit = shader_get_uniform(sh_FlashRed, "utimer");
+
+//font stuff
+font_enable_effects(fnt_modifiers, true, {
+    outlineEnable: true,
+    outlineDistance: 2,
+    outlineColour: c_black
+});

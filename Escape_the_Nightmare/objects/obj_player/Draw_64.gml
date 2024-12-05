@@ -25,3 +25,11 @@ if (collision_message != "") {
     // Display the collision message at the center of the room
     draw_text(room_width / 2, room_height / 6, collision_message);
 }
+
+
+
+for (var i = 0; i < hp; i++){
+	draw_sprite(spr_health, 0, (80 + 24 * i), room_height - 30)
+}
+
+draw_text(room_width/25 + 10,room_height - 50, "Hp:")

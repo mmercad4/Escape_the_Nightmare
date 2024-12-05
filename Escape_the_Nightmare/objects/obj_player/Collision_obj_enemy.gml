@@ -1,3 +1,3 @@
-hp -= 0.5
+hp -= 1
 instance_destroy(other)
 is_hit = true

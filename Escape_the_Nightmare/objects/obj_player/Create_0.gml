@@ -1,4 +1,4 @@
-hp = 5
+hp = 10
 can_shoot = true
 move_horizontal = 0
 move_vertical = 0
@@ -34,3 +34,5 @@ font_enable_effects(fnt_modifiers, true, {
     outlineDistance: 2,
     outlineColour: c_black
 });
+
+is_burning = false

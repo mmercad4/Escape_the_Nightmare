@@ -144,3 +144,8 @@ if(is_hit){
 else{
 	hit_timer = 0
 }
+
+// Handle the burning effect
+if (is_burning) {
+        hp -= .02;
+}

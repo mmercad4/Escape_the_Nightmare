@@ -12,13 +12,13 @@ if (instance_exists(obj_player)) {
 
         // Set attack sprite based on player direction
         if (dir_to_player >= 45 && dir_to_player < 135) {
-            sprite_index = spr_orc1_attack_up; // Attack downward
+            sprite_index = spr_slime3_attack_up; // Attack downward
         } else if (dir_to_player >= 135 && dir_to_player < 225) {
-            sprite_index = spr_orc1_attack_left; // Attack left
+            sprite_index = spr_slime3_attack_left; // Attack left
         } else if (dir_to_player >= 225 && dir_to_player < 315) {
-            sprite_index = spr_orc1_attack_down; // Attack upward
+            sprite_index = spr_slime3_attack_down; // Attack upward
         } else {
-            sprite_index = spr_orc1_attack_right; // Attack right
+            sprite_index = spr_slime3_attack_right; // Attack right
         }
 
         // Exit to avoid overriding attack sprites with movement sprites
@@ -43,11 +43,11 @@ if (place_meeting(x, y, obj_wall)) {
 
 // Set movement sprite based on direction
 if (direction >= 45 && direction < 135) {
-    sprite_index = spr_orc1_walk_up; // Moving down
+    sprite_index = spr_slime3_walk_down; // Moving down
 } else if (direction >= 135 && direction < 225) {
-    sprite_index = spr_orc1_walk_left; // Moving left
+    sprite_index = spr_slime3_walk_left; // Moving left
 } else if (direction >= 225 && direction < 315) {
-    sprite_index = spr_orc1_walk_down; // Moving up
+    sprite_index = spr_slime3_walk_up; // Moving up
 } else {
-    sprite_index = spr_orc1_walk_right; // Moving right
+    sprite_index = spr_slime3_walk_right; // Moving right
 }

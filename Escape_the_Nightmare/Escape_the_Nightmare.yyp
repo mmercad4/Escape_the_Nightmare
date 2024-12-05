@@ -114,6 +114,7 @@
     {"id":{"name":"obj_orc","path":"objects/obj_orc/obj_orc.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_room_gen","path":"objects/obj_room_gen/obj_room_gen.yy",},},
+    {"id":{"name":"obj_slime","path":"objects/obj_slime/obj_slime.yy",},},
     {"id":{"name":"obj_small_bullets","path":"objects/obj_small_bullets/obj_small_bullets.yy",},},
     {"id":{"name":"obj_small_player","path":"objects/obj_small_player/obj_small_player.yy",},},
     {"id":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},},

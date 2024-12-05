@@ -8,7 +8,7 @@
   "managed":true,
   "name":"obj_text",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},"propertyId":{"name":"text","path":"objects/obj_title/obj_title.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"text",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},"propertyId":{"name":"text","path":"objects/obj_title/obj_title.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"W,A,S,D to move",},
   ],
   "parent":{
     "name":"Text Objects",

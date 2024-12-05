@@ -132,3 +132,15 @@ if (can_shoot and hspeed == 0 && vspeed == 0) {
 } else {
     image_speed = 1; // Normal animation speed when moving
 }
+
+
+// Shader stuff
+if(is_hit){
+	hit_timer +=1
+	if(hit_timer > hit_release){
+		is_hit = false
+	}
+}
+else{
+	hit_timer = 0
+}

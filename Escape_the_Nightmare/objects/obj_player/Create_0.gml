@@ -19,3 +19,9 @@ item_array = []
 points = 0;
 
 collision_message = ""
+
+// Shader Stuff
+is_hit = false
+hit_timer = 0
+hit_release = room_speed * 0.5
+sh_handle_timer_hit = shader_get_uniform(sh_FlashRed, "utimer");

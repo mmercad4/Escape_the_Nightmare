@@ -123,6 +123,8 @@
     {"id":{"name":"obj_theme","path":"objects/obj_theme/obj_theme.yy",},},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
+    {"id":{"name":"ParticleSystem3","path":"particles/ParticleSystem3/ParticleSystem3.yy",},},
+    {"id":{"name":"ps_cloud","path":"particles/ps_cloud/ps_cloud.yy",},},
     {"id":{"name":"ps_item","path":"particles/ps_item/ps_item.yy",},},
     {"id":{"name":"path_basic_circle","path":"paths/path_basic_circle/path_basic_circle.yy",},},
     {"id":{"name":"rm_1","path":"rooms/rm_1/rm_1.yy",},},

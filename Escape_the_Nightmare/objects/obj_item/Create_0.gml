@@ -12,3 +12,6 @@ name = "general item"
 image_xscale = scale_factor;
 image_yscale = scale_factor;
 
+partSys = part_system_create_layer("Assets_1", 0, ps_item)
+
+part_system_position(partSys, x,y);

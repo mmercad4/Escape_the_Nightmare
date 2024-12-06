@@ -11,3 +11,4 @@ name = "general item"
 // Adjust the sprite scale
 image_xscale = scale_factor;
 image_yscale = scale_factor;
+

@@ -4,6 +4,9 @@
 // Inherit the parent event
 event_inherited();
 
+
+if (hp <= 0) sprite_index = enemy_death
+
 if (direction > 45 && direction <= 135) {
     sprite_index = enemy_move_up;
 }

@@ -95,6 +95,7 @@
   },
   "name":"Escape_the_Nightmare",
   "resources":[
+    {"id":{"name":"fnt_basic","path":"fonts/fnt_basic/fnt_basic.yy",},},
     {"id":{"name":"fnt_modifiers","path":"fonts/fnt_modifiers/fnt_modifiers.yy",},},
     {"id":{"name":"fnt_title","path":"fonts/fnt_title/fnt_title.yy",},},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},

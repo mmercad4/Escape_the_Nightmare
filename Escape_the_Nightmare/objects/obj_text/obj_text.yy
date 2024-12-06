@@ -34,6 +34,7 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"font","filters":[],"listItems":[],"multiselect":false,"name":"font","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"fnt_modifiers","path":"fonts/fnt_modifiers/fnt_modifiers.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"fnt_modifiers","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"font_scale","filters":[],"listItems":[],"multiselect":false,"name":"font_scale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1.0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"font_color","filters":[],"listItems":[],"multiselect":false,"name":"font_color","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF000000","varType":7,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

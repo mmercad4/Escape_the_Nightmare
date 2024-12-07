@@ -26,7 +26,6 @@ ds_queue_enqueue(queue, 35)
 
 while (rooms_placed < num_rooms and not ds_queue_empty(queue)) {
 	var cell = ds_queue_dequeue(queue)
-	show_debug_message("cell: " + string(cell))
 	var looking = cell //Which cell we're currently inspecting
 	
 	//Look at each cardinal direction (In order, up, right, bottom, left)
@@ -40,8 +39,6 @@ while (rooms_placed < num_rooms and not ds_queue_empty(queue)) {
 	try { if rooms[looking - 10] != -1 { neighbor_neighbors += 1 } } catch(_exception) {  }
 	try { if rooms[looking + 1] != -1 { neighbor_neighbors += 1 } } catch(_exception) {  }
 	try { if rooms[looking - 1] != -1 { neighbor_neighbors += 1 } } catch(_exception) {  }
-	
-	show_debug_message("neighbor_neighbors: " + string(neighbor_neighbors))
 	
 	if rooms[looking] == -1 and neighbor_neighbors < 2 and rooms_placed < num_rooms { //Skip if cell is already occupied or has too many neighbors		
 		if random(10) >= 5 { //50% chance to place a room
@@ -62,8 +59,6 @@ while (rooms_placed < num_rooms and not ds_queue_empty(queue)) {
 	try { if rooms[looking + 1] != -1 { neighbor_neighbors += 1 } } catch(_exception) {  }
 	try { if rooms[looking - 1] != -1 { neighbor_neighbors += 1 } } catch(_exception) {  }
 	
-	show_debug_message("neighbor_neighbors: " + string(neighbor_neighbors))
-	
 	if rooms[looking] == -1 and neighbor_neighbors < 2 and rooms_placed < num_rooms { //Skip if cell is already occupied or has too many neighbors		
 		if random(10) >= 5 { //50% chance to place a room
 			rooms[looking] = 0 
@@ -82,8 +77,6 @@ while (rooms_placed < num_rooms and not ds_queue_empty(queue)) {
 	try { if rooms[looking - 10] != -1 { neighbor_neighbors += 1 } } catch(_exception) {  }
 	try { if rooms[looking + 1] != -1 { neighbor_neighbors += 1 } } catch(_exception) {  }
 	try { if rooms[looking - 1] != -1 { neighbor_neighbors += 1 } } catch(_exception) {  }
-	
-	show_debug_message("neighbor_neighbors: " + string(neighbor_neighbors))
 	
 	if rooms[looking] == -1 and neighbor_neighbors < 2 and rooms_placed < num_rooms { //Skip if cell is already occupied or has too many neighbors		
 		if random(10) >= 5 { //50% chance to place a room
@@ -104,8 +97,6 @@ while (rooms_placed < num_rooms and not ds_queue_empty(queue)) {
 	try { if rooms[looking + 1] != -1 { neighbor_neighbors += 1 } } catch(_exception) {  }
 	try { if rooms[looking - 1] != -1 { neighbor_neighbors += 1 } } catch(_exception) {  }
 	
-	show_debug_message("neighbor_neighbors: " + string(neighbor_neighbors))
-	
 	if rooms[looking] == -1 and neighbor_neighbors < 2 and rooms_placed < num_rooms { //Skip if cell is already occupied or has too many neighbors		
 		if random(10) >= 5 { //50% chance to place a room
 			rooms[looking] = 0 
@@ -119,10 +110,6 @@ while (rooms_placed < num_rooms and not ds_queue_empty(queue)) {
 	if (rooms_placed < num_rooms - 2) { ds_queue_enqueue(queue, 35) }
 	
 } //END WHILE
-
-
-show_debug_message(rooms)
-show_debug_message(num_rooms)
 
 //Add in different room patterns (cell IDs other than 0)
 for (var i = 0; i < array_length(rooms); i+=1) {

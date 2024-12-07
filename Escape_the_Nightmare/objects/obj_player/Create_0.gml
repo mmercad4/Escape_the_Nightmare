@@ -22,6 +22,8 @@ points = 0;
 
 collision_message = ""
 
+rooms_entered = 0
+
 // Shader Stuff
 is_hit = false
 hit_timer = 0

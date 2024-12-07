@@ -6,7 +6,7 @@ function generateRandomEnemies(){
 // Array of enemy objects
 var enemy_objects = [obj_ghost, obj_orc, obj_slime];
 
-var num_enemies = irandom_range(2, 5);
+var num_enemies = irandom_range(5, 10);
 var spawn_margin = 32;
 
 for (var i = 0; i < num_enemies; i++) {
@@ -15,6 +15,9 @@ for (var i = 0; i < num_enemies; i++) {
     var spawn_y = irandom_range(spawn_margin, room_height - spawn_margin);
 
     instance_create_layer(spawn_x, spawn_y, "Instances", enemy_type);
+	
+	global.points_to_win += 10;
+	show_debug_message("Global Points to Win: " + string(global.points_to_win));
 }
 
 }
